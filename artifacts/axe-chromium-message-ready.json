@@ -1,0 +1,56 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscured",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<textarea id=\"prepared-message\" class=\"prepared-message\" readonly=\"\" rows=\"6\" style=\"\">Hi Kaito, I\u2019m Alex Chen.\n\nA responsive site for our onchain community. We would like help with design and development.\n\nYou can reach me at alex@example.com.</textarea>",
+                  "target": [
+                    "#prepared-message"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<textarea id=\"prepared-message\" class=\"prepared-message\" readonly=\"\" rows=\"6\" style=\"\">Hi Kaito, I\u2019m Alex Chen.\n\nA responsive site for our onchain community. We would like help with design and development.\n\nYou can reach me at alex@example.com.</textarea>",
+          "target": [
+            "#prepared-message"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        }
+      ]
+    }
+  ]
+}

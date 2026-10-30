@@ -1,0 +1,14 @@
+# Explicit submission budgets for these paths are 0 bytes; see artifacts/path-budget.md.
+**/node_modules/
+**/.vite/
+**/.cache/
+**/.npm/
+**/*.tsbuildinfo
+/test/scratch/
+/.playwright-mcp/
+
+# The finished export and review artifacts are deliverables.
+!dist/
+!dist/**
+!artifacts/
+!artifacts/**

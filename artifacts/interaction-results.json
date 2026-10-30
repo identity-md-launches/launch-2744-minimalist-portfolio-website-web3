@@ -1,0 +1,153 @@
+{
+  "started": "2026-10-30T19:22:21.457Z",
+  "engines": [
+    "chromium"
+  ],
+  "checks": [
+    {
+      "name": "chromium: layout 320px",
+      "passed": true
+    },
+    {
+      "name": "chromium: layout 390px",
+      "passed": true
+    },
+    {
+      "name": "chromium: layout 768px",
+      "passed": true
+    },
+    {
+      "name": "chromium: layout 1440px",
+      "passed": true
+    },
+    {
+      "name": "chromium: main page accessibility audit",
+      "passed": true
+    },
+    {
+      "name": "chromium: rendered text and control contrast",
+      "passed": true
+    },
+    {
+      "name": "chromium: keyboard navigation and skip link",
+      "passed": true
+    },
+    {
+      "name": "chromium: anchor navigation",
+      "passed": true
+    },
+    {
+      "name": "chromium: both project dialogs, focus trap, Escape and focus return",
+      "passed": true
+    },
+    {
+      "name": "chromium: project CTA reaches contact",
+      "passed": true
+    },
+    {
+      "name": "chromium: dialog close button and backdrop",
+      "passed": true
+    },
+    {
+      "name": "chromium: contact validation and recovery",
+      "passed": true
+    },
+    {
+      "name": "chromium: clipboard success",
+      "passed": true
+    },
+    {
+      "name": "chromium: clipboard failure is recoverable",
+      "passed": true
+    },
+    {
+      "name": "chromium: message download contains prepared text",
+      "passed": true
+    },
+    {
+      "name": "chromium: edit preserves input, optional email can be omitted",
+      "passed": true
+    },
+    {
+      "name": "chromium: social links and share assets",
+      "passed": true
+    },
+    {
+      "name": "chromium: reduced motion",
+      "passed": true
+    },
+    {
+      "name": "chromium: 200% text enlargement reflow",
+      "passed": true
+    },
+    {
+      "name": "chromium: RTL mirror and forced colors",
+      "passed": true
+    },
+    {
+      "name": "chromium: no script errors, failed resources, or external requests",
+      "passed": true
+    }
+  ],
+  "contrast": [
+    {
+      "engine": "chromium",
+      "label": "Body text / page",
+      "foreground": "rgb(32, 39, 31)",
+      "background": "rgb(247, 248, 242)",
+      "ratio": 14.34,
+      "minimum": 4.5
+    },
+    {
+      "engine": "chromium",
+      "label": "Secondary text / page",
+      "foreground": "rgb(98, 107, 97)",
+      "background": "rgb(247, 248, 242)",
+      "ratio": 5.18,
+      "minimum": 4.5
+    },
+    {
+      "engine": "chromium",
+      "label": "Placeholder / contact surface",
+      "foreground": "rgb(98, 107, 97)",
+      "background": "rgb(237, 240, 230)",
+      "ratio": 4.8,
+      "minimum": 4.5
+    },
+    {
+      "engine": "chromium",
+      "label": "Primary button text / fill",
+      "foreground": "rgb(255, 255, 255)",
+      "background": "rgb(49, 92, 61)",
+      "ratio": 7.7,
+      "minimum": 4.5
+    },
+    {
+      "engine": "chromium",
+      "label": "Input boundary / contact surface",
+      "foreground": "rgb(125, 135, 119)",
+      "background": "rgb(237, 240, 230)",
+      "ratio": 3.25,
+      "minimum": 3
+    },
+    {
+      "engine": "chromium",
+      "label": "Focus ring / page",
+      "foreground": "rgb(49, 92, 61)",
+      "background": "rgb(247, 248, 242)",
+      "ratio": 7.21,
+      "minimum": 3
+    },
+    {
+      "engine": "chromium",
+      "label": "Focus ring / contact surface",
+      "foreground": "rgb(49, 92, 61)",
+      "background": "rgb(237, 240, 230)",
+      "ratio": 6.67,
+      "minimum": 3
+    }
+  ],
+  "limitations": [
+    "WebKit could not launch: browserType.launch:  ╔══════════════════════════════════════════════════════╗ ║ Host system is missing dependencies to run browsers. ║ ║ Missing libraries:                                   ║"
+  ]
+}
